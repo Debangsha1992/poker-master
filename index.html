@@ -1,0 +1,2076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poker Mentor | Modern Gamified Coaching</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-elements">
+    <div class="orb orb-teal"></div>
+    <div class="orb orb-magenta"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="page-shell">
+    <header class="top-bar glass">
+      <div class="logo-mark">PM</div>
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#play">Play</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="chip-counter glass">Beta · Live coach</div>
+    </header>
+
+    <main>
+      <section class="hero" id="about">
+        <div class="hero-grid">
+          <div class="hero-copy glass">
+            <p class="eyebrow">Premium poker coach</p>
+            <h1>Modern Poker Mentor</h1>
+            <p class="lede">Glass-smooth UI, guided hands that glow. Learn faster with motion, clarity, and a calm coach voice.</p>
+            <div class="cta-row">
+              <button class="cta primary" id="start-guided">Start coaching</button>
+              <button class="cta ghost">Watch demo</button>
+            </div>
+            <div class="mode-tabs">
+              <button class="mode-btn active" data-mode="guided">Guided Play</button>
+              <button class="mode-btn" data-mode="practice">Practice</button>
+              <button class="mode-btn" data-mode="scenario">Scenario Lab</button>
+              <button class="mode-btn" data-mode="library">Concept Library</button>
+            </div>
+            <div class="micro-metrics">
+              <div class="metric">
+                <span class="dot"></span>
+                Real-time ranges
+              </div>
+              <div class="metric">
+                <span class="dot"></span>
+                Micro-animations on every street
+              </div>
+              <div class="metric">
+                <span class="dot"></span>
+                Adaptive hint intensity
+              </div>
+            </div>
+            <div class="ticker glass">
+              <div class="ticker-track">
+                <span>Daily Quest: Win 3 pots with float bets •</span>
+                <span>New Deck: Neon Drift Pack •</span>
+                <span>Coach Tip: Bet smaller on paired boards •</span>
+                <span>Unlock: Blind Shield drills •</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual glass parallax">
+            <div class="floating-tag glass">Featured hands carousel</div>
+            <div class="carousel-window">
+              <div class="carousel-track">
+                <article class="poke-card active">
+                  <div class="card-header">
+                    <span class="card-rank">A♠</span>
+                    <span class="card-tag">Legendary</span>
+                  </div>
+                  <div class="card-hero">
+                    <div class="card-glow"></div>
+                    <div class="card-art">Button Blitz</div>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-title">Button Blitz</p>
+                    <p class="card-copy">Open wide on the button, pressure blinds with 2.2x raises, and c-bet high boards.</p>
+                  </div>
+                </article>
+                <article class="poke-card">
+                  <div class="card-header">
+                    <span class="card-rank">K♥</span>
+                    <span class="card-tag">Epic</span>
+                  </div>
+                  <div class="card-hero">
+                    <div class="card-glow"></div>
+                    <div class="card-art">Cutoff Control</div>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-title">Cutoff Control</p>
+                    <p class="card-copy">Steal when folded to you, mix 3-bets vs late opens, and float vs small c-bets.</p>
+                  </div>
+                </article>
+                <article class="poke-card">
+                  <div class="card-header">
+                    <span class="card-rank">Q♦</span>
+                    <span class="card-tag">Rare</span>
+                  </div>
+                  <div class="card-hero">
+                    <div class="card-glow"></div>
+                    <div class="card-art">Blind Shield</div>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-title">Blind Shield</p>
+                    <p class="card-copy">Defend with suited connectors and pairs; 3-bet hands that hate multiway pots.</p>
+                  </div>
+                </article>
+                <article class="poke-card">
+                  <div class="card-header">
+                    <span class="card-rank">J♣</span>
+                    <span class="card-tag">Hero</span>
+                  </div>
+                  <div class="card-hero">
+                    <div class="card-glow"></div>
+                    <div class="card-art">Stack Ninja</div>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-title">Stack Ninja</p>
+                    <p class="card-copy">Adjust to SPR: small pots with one-pair hands, big pots with nutted combos.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="carousel-dots">
+              <button class="dot-btn active" aria-label="Slide 1"></button>
+              <button class="dot-btn" aria-label="Slide 2"></button>
+              <button class="dot-btn" aria-label="Slide 3"></button>
+              <button class="dot-btn" aria-label="Slide 4"></button>
+            </div>
+            <div class="stat-bubble glass">
+              <p class="label">Coach callout</p>
+              <p class="value">Card names are your cues. Swipe the carousel to see how each spot plays.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sim glass" id="sim">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Simulated Table</p>
+            <h2>Play cash or tournament hands vs AI crews.</h2>
+          </div>
+          <div class="wallet glass">
+            <span>Bankroll</span>
+            <strong id="sim-wallet">500</strong>
+            <button class="cta ghost small" id="sim-bankroll-boost">Daily boost</button>
+          </div>
+        </div>
+        <div class="sim-controls">
+          <label>Mode
+            <select id="sim-mode">
+              <option value="cash">Cash</option>
+              <option value="tournament">Tournament</option>
+            </select>
+          </label>
+          <label>Seats
+            <select id="sim-seat-count">
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4" selected>4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </label>
+          <label>Difficulty
+            <select id="sim-ai-mix">
+              <option value="balanced">Balanced</option>
+              <option value="aggressive">Aggressive</option>
+              <option value="chill">Relaxed</option>
+              <option value="exploit">Exploitative</option>
+            </select>
+          </label>
+          <label>Blinds
+            <input type="number" id="sim-blinds" value="1" min="0.5" step="0.5">
+          </label>
+          <label>Starting stack
+            <input type="number" id="sim-stack" value="120" min="40" step="10">
+          </label>
+          <button class="cta ghost" id="sim-start">Start table</button>
+          <button class="cta ghost" id="sim-deal" disabled>Deal hand</button>
+        </div>
+        <div class="sim-missions">
+          <article class="mission glass">
+            <p class="label">Mission</p>
+            <h4 id="sim-mission-title">Win 30 chips defending blinds</h4>
+            <p id="sim-mission-progress">Progress: 0 / 30</p>
+          </article>
+          <article class="mission glass">
+            <p class="label">XP</p>
+            <h4 id="sim-xp">0 XP</h4>
+            <p id="sim-xp-note">Earn XP for solid decisions.</p>
+          </article>
+        </div>
+        <div class="sim-table">
+          <div class="sim-info glass">
+            <p id="sim-status">Table idle. Configure and start.</p>
+            <p id="sim-pot">Pot: 0</p>
+            <p id="sim-dealer">Dealer: --</p>
+          </div>
+          <div class="sim-main">
+            <div class="sim-board glass">
+              <div class="board-block">
+                <p class="label">Board</p>
+                <div class="cards-row" id="sim-board"></div>
+              </div>
+              <div class="board-block">
+                <p class="label">Hero hand</p>
+                <div class="cards-row" id="sim-hero-cards"></div>
+              </div>
+              <div class="hint-toggle">
+                <label>
+                  <input type="checkbox" id="sim-hint-toggle" checked>
+                  Show hints
+                </label>
+              </div>
+            </div>
+            <div class="sim-history glass">
+              <p class="label">Hand history</p>
+              <div class="history-feed" id="sim-history"></div>
+            </div>
+          </div>
+          <div class="sim-seats" id="sim-seats"></div>
+          <div class="sim-actions" id="sim-actions"></div>
+          <div class="sim-log glass" id="sim-log"></div>
+          <div class="chip-layer" id="chip-layer"></div>
+        </div>
+      </section>
+
+      <section class="gamified glass" id="play">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Gamified coaching</p>
+            <h2>Every decision animated, explained, rewarded.</h2>
+          </div>
+          <button class="cta ghost" id="launch-table">Launch table</button>
+        </div>
+
+        <div class="gamified-grid">
+          <article class="panel glass session">
+            <div class="panel-top">
+              <span class="pill live" id="mode-label">Live hand</span>
+              <span class="pill hint" id="hint-label">Hints on</span>
+            </div>
+            <div class="table-visual">
+              <div class="hole">
+                <div>
+                  <p class="label">Hero cards</p>
+                  <div class="cards-row" id="hero-cards"></div>
+                </div>
+                <div>
+                  <p class="label">Villain type</p>
+                  <p class="value" id="villain-type">TAG — tight aggressive</p>
+                </div>
+              </div>
+              <div class="players">
+                <div>
+                  <p class="label">You</p>
+                  <p class="value" id="hero-spot">Button · 42 BB</p>
+                </div>
+                <div class="glow-chip">●</div>
+                <div>
+                  <p class="label">Villain</p>
+                  <p class="value" id="villain-spot">LAG · 38 BB</p>
+                </div>
+              </div>
+              <div class="board">
+                <span class="label" id="street-label">Flop</span>
+                <div class="board-wrap">
+                  <div class="cards-row" id="board-cards">
+                    <div class="poker-card glass tile"><span class="rank">J</span><span class="suit">♠</span></div>
+                    <div class="poker-card glass tile"><span class="rank">7</span><span class="suit">♦</span></div>
+                    <div class="poker-card glass tile"><span class="rank">3</span><span class="suit">♣</span></div>
+                  </div>
+                  <div class="range-overlay">
+                    <p class="label">Range heat</p>
+                    <div class="range-bars">
+                      <span class="bar high"></span>
+                      <span class="bar mid"></span>
+                      <span class="bar low"></span>
+                    </div>
+                  </div>
+                  <div class="pot-bubble glass">
+                    <p class="label">Pot odds</p>
+                    <p class="value" id="pot-odds">You invest 1.2 to win 4.1 (29% needed)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="advice glass">
+                <p class="label">Coach says</p>
+                <p class="value" id="advice-text">Bet 35%. You have range advantage; fold equity rises against this player type.</p>
+              </div>
+              <div class="actions" id="actions"></div>
+              <div class="hint-panel glass">
+                <p class="label">Hint panel</p>
+                <ul id="hint-list"></ul>
+              </div>
+            </div>
+            <div class="recap glass">
+              <p class="label">Post-hand recap</p>
+              <ul id="recap-list"></ul>
+            </div>
+          </article>
+
+          <article class="panel glass ladder">
+            <p class="eyebrow">Progress track</p>
+            <h3 id="level-title">Level 4 · Positional Aggression</h3>
+            <ul class="progress-list" id="progress-list">
+              <li><span>Pot odds</span><span>80%</span></li>
+              <li><span>Opening ranges</span><span>68%</span></li>
+              <li><span>Blind defense</span><span>52%</span></li>
+            </ul>
+            <div class="progress-bar">
+              <span id="progress-bar" style="width: 68%"></span>
+            </div>
+            <div class="quests" id="quests">
+              <div class="quest glass">
+                <p class="label">Quest</p>
+                <p class="value">Win 3 pots with float bets.</p>
+              </div>
+              <div class="quest glass">
+                <p class="label">Quest</p>
+                <p class="value">Identify 2 bluff-catch spots.</p>
+              </div>
+            </div>
+            <div class="badge-row">
+              <div class="streak-card glass">
+                <p class="eyebrow">Daily streak</p>
+                <h4 id="streak-value">5-day</h4>
+                <p class="value" id="streak-note">Consistent reps unlocked boosts.</p>
+              </div>
+              <div class="badge-grid" id="badge-grid">
+                <span class="badge-tag earned">Correct fold</span>
+                <span class="badge-tag">Calculated pot odds</span>
+              </div>
+            </div>
+            <div class="metrics glass">
+              <div class="metric-block">
+                <p class="label">Decision accuracy</p>
+                <h4 id="metric-accuracy">0%</h4>
+              </div>
+              <div class="metric-block">
+                <p class="label">Aggression freq</p>
+                <h4 id="metric-aggression">0%</h4>
+              </div>
+              <div class="metric-block">
+                <p class="label">Fold vs 3-bet</p>
+                <h4 id="metric-fold">0%</h4>
+              </div>
+            </div>
+            <div class="weekly-grid" id="weekly-grid">
+              <article class="weekly-card glass">
+                <p class="label">Weekly summary</p>
+                <p class="value small">Complete a hand to see highlights.</p>
+              </article>
+            </div>
+            <button class="cta primary full" id="resume-drills">Resume drills</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="lab glass" id="lab">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Scenario Lab</p>
+            <h2>Input a spot. Get the line.</h2>
+          </div>
+          <button class="cta ghost" id="run-scenario">Analyze</button>
+        </div>
+        <div class="lab-grid">
+          <form class="lab-form" id="lab-form">
+            <label>Position
+              <select name="position">
+                <option>Button</option>
+                <option>Cutoff</option>
+                <option>Hijack</option>
+                <option>Small Blind</option>
+                <option>Big Blind</option>
+              </select>
+            </label>
+            <label>Stack (BB)
+              <input type="number" name="stack" value="40" min="5" max="250" />
+            </label>
+            <label>Villain type
+              <select name="villain">
+                <option>TAG</option>
+                <option>LAG</option>
+                <option>Loose-passive</option>
+                <option>Tight-passive</option>
+              </select>
+            </label>
+            <label>Street
+              <select name="street">
+                <option>Preflop</option>
+                <option>Flop</option>
+                <option>Turn</option>
+                <option>River</option>
+              </select>
+            </label>
+            <label>Board (e.g., AsJh4c)
+              <input type="text" name="board" placeholder="AsJh4c" />
+            </label>
+            <label>Hole cards (e.g., KcQs)
+              <input type="text" name="hand" placeholder="KcQs" />
+            </label>
+          </form>
+          <div class="lab-output glass" id="lab-output">
+            <p class="label">Recommended line</p>
+            <p class="value" id="lab-line">Pick a spot and hit analyze.</p>
+            <div class="lab-alt" id="lab-alt"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="library glass" id="library">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Concept Library</p>
+            <h2>Progressive learning path</h2>
+          </div>
+        </div>
+        <div class="concept-grid" id="concept-grid"></div>
+      </section>
+
+      <section class="lessons glass" id="lessons">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Stage lessons</p>
+            <h2>Stage 1–3 with examples</h2>
+          </div>
+        </div>
+        <div class="lesson-grid">
+          <article class="lesson glass">
+            <div class="lesson-head">
+              <span class="pill live">Stage 1</span>
+              <p class="eyebrow">Foundations</p>
+            </div>
+            <h3>Rules, hand ranks, betting rounds</h3>
+            <p class="value">Quickly spot the strongest hand and what actions are allowed each street.</p>
+            <ul class="bullet">
+              <li>Hand ladder: Royal > Straight Flush > Four of a Kind > Full House > Flush > Straight > Trips > Two Pair > One Pair > High Card.</li>
+              <li>Action order: Preflop blinds post first; action clockwise. Flop/Turn/River each has bet/check/raise/fold.</li>
+              <li>Example: You hold A♠ K♠ on J♠ 8♠ 2♦ — strong flush draw; plan to continue vs bets.</li>
+            </ul>
+          </article>
+          <article class="lesson glass">
+            <div class="lesson-head">
+              <span class="pill live">Stage 2</span>
+              <p class="eyebrow">Core math</p>
+            </div>
+            <h3>Pot odds, outs, EV as price vs. value</h3>
+            <p class="value">Decide fast: compare your price to your chance to win.</p>
+            <ul class="bullet">
+              <li>Outs: Flush draw = 9 outs; open-ender = 8 outs; two overcards ≈ 6 outs.</li>
+              <li>Pot odds bubble: Call ÷ (Pot + Call). If 1.2 to win 4.1 → ~29% needed. Flush draw on flop ≈ 35% → call is good.</li>
+              <li>Example: Pot 3 BB, villain bets 1 BB. Need 1 / (3+1+1) = 20%. Any 8-out straight draw ≈ 31% → call.</li>
+            </ul>
+          </article>
+          <article class="lesson glass">
+            <div class="lesson-head">
+              <span class="pill live">Stage 3</span>
+              <p class="eyebrow">Position & ranges</p>
+            </div>
+            <h3>Info advantage and colored ranges</h3>
+            <p class="value">Acting last lets you widen opens and apply pressure.</p>
+            <ul class="bullet">
+              <li>Late position (Button/CO): open wider; add suited connectors and suited aces.</li>
+              <li>Early position: play tight—pairs, big aces, strong broadways.</li>
+              <li>Example range overlay: BTN opens (green) all pairs, all suited aces, K9s+, Q9s+, J9s+, T8s+, 98s-54s, ATo+, KJo+.</li>
+              <li>Blind defense: call suited connectors/pairs vs small opens; 3-bet offsuit broadways vs frequent stealers.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    (() => {
+      const cards = Array.from(document.querySelectorAll('.poke-card'));
+      const dots = Array.from(document.querySelectorAll('.dot-btn'));
+      if (!cards.length) return;
+
+      let index = 0;
+      const activate = (i) => {
+        cards.forEach((card, idx) => {
+          card.classList.toggle('active', idx === i);
+          card.style.setProperty('--offset', idx - i);
+        });
+        dots.forEach((dot, idx) => {
+          dot.classList.toggle('active', idx === i);
+        });
+      };
+
+      dots.forEach((dot, idx) => {
+        dot.addEventListener('click', () => {
+          index = idx;
+          activate(index);
+        });
+      });
+
+      setInterval(() => {
+        index = (index + 1) % cards.length;
+        activate(index);
+      }, 4200);
+
+      activate(index);
+
+      const parallaxZone = document.querySelector('.parallax');
+      if (parallaxZone) {
+        parallaxZone.addEventListener('mousemove', (e) => {
+          const rect = parallaxZone.getBoundingClientRect();
+          const x = (e.clientX - rect.left) / rect.width;
+          const y = (e.clientY - rect.top) / rect.height;
+          const dx = (x - 0.5) * 16;
+          const dy = (y - 0.5) * 12;
+          parallaxZone.style.setProperty('--tilt-x', `${dx}px`);
+          parallaxZone.style.setProperty('--tilt-y', `${dy}px`);
+        });
+        parallaxZone.addEventListener('mouseleave', () => {
+          parallaxZone.style.setProperty('--tilt-x', `0px`);
+          parallaxZone.style.setProperty('--tilt-y', `0px`);
+        });
+      }
+
+      // Guided trainer engine
+      const modeButtons = document.querySelectorAll('.mode-btn');
+      const modeLabel = document.getElementById('mode-label');
+      const hintLabel = document.getElementById('hint-label');
+      const actionsEl = document.getElementById('actions');
+      const adviceEl = document.getElementById('advice-text');
+      const boardEl = document.getElementById('board-cards');
+      const streetLabel = document.getElementById('street-label');
+      const heroSpot = document.getElementById('hero-spot');
+      const villainSpot = document.getElementById('villain-spot');
+      const heroCardsEl = document.getElementById('hero-cards');
+      const villainTypeEl = document.getElementById('villain-type');
+      const potOddsEl = document.getElementById('pot-odds');
+      const hintListEl = document.getElementById('hint-list');
+      const recapListEl = document.getElementById('recap-list');
+      const hintPanelEl = document.querySelector('.hint-panel');
+      const rangeBars = document.querySelectorAll('.range-bars .bar');
+
+      const ranks = ['2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A'];
+      const suits = ['♠', '♥', '♦', '♣'];
+      const rankValues = ranks.reduce((map, rank, idx) => {
+        map[rank] = idx + 2;
+        return map;
+      }, {});
+      const streetOrder = ['Preflop', 'Flop', 'Turn', 'River', 'Showdown'];
+      const boardReveal = { Preflop: 0, Flop: 3, Turn: 4, River: 5, Showdown: 5 };
+      const positions = ['Button', 'Cutoff', 'Hijack', 'Small Blind', 'Big Blind'];
+
+      const opponentModels = {
+        TAG: {
+          name: 'TAG',
+          tagline: 'tight-aggressive and balanced',
+          summary: 'Folds to big check-raises ~35%, barrels turns when checked to.',
+          fold: 0.35,
+          aggression: 0.65,
+          exploit: 'Mix in delayed c-bets and thin value—they respect pressure.',
+        },
+        'Loose-passive': {
+          name: 'Loose-passive',
+          tagline: 'calls too wide, rarely bluffs',
+          summary: 'Calls preflop wide and floats but seldom raises without strength.',
+          fold: 0.55,
+          aggression: 0.25,
+          exploit: 'Value bet relentlessly; bluff less on later streets.',
+        },
+        LAG: {
+          name: 'LAG',
+          tagline: 'loose-aggressive pressure',
+          summary: 'Opens wide and fires multiple barrels; capable of bluff shoves.',
+          fold: 0.28,
+          aggression: 0.78,
+          exploit: 'Trap with strong hands and widen 4-bets; call down lighter.',
+        },
+        'Tight-passive': {
+          name: 'Tight-passive',
+          tagline: 'fit-or-fold, rarely bluffs',
+          summary: 'Shows up with strong ranges; hates facing big bets.',
+          fold: 0.6,
+          aggression: 0.18,
+          exploit: 'Steal blinds relentlessly; fold to aggression unless nutted.',
+        },
+      };
+
+      let trainerMode = 'guided';
+      const trainerState = {
+        mode: trainerMode,
+        deck: [],
+        hero: [],
+        villain: [],
+        boardFull: [],
+        stageIndex: 0,
+        villainType: 'TAG',
+        pot: 4.1,
+        bet: 1.2,
+        heroStack: 42,
+        villainStack: 38,
+        heroPosition: 'Button',
+        villainPosition: 'Cutoff',
+        log: [],
+        folded: false,
+        resultText: '',
+      };
+      let currentActions = [];
+      let hintsEnabled = true;
+      const metrics = {
+        totalDecisions: 0,
+        correctDecisions: 0,
+        aggressionActions: 0,
+        foldActions: 0,
+        weeklyHands: [],
+      };
+
+      const createDeck = () => {
+        const deck = [];
+        suits.forEach(suit => {
+          ranks.forEach(rank => deck.push({ rank, suit }));
+        });
+        return deck;
+      };
+
+      const shuffle = (deck) => {
+        for (let i = deck.length - 1; i > 0; i -= 1) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [deck[i], deck[j]] = [deck[j], deck[i]];
+        }
+        return deck;
+      };
+
+      const drawCards = (count) => Array.from({ length: count }, () => trainerState.deck.pop());
+
+      const renderCards = (container, cards) => {
+        if (!container) return;
+        if (!cards.length) {
+          container.innerHTML = '<div class="card-placeholder">--</div>';
+          return;
+        }
+        container.innerHTML = cards.map(card => `
+          <div class="poker-card glass tile">
+            <span class="rank">${card.rank}</span><span class="suit">${card.suit}</span>
+          </div>
+        `).join('');
+      };
+
+      const renderPlaceholders = (container, count = 5, label = '??') => {
+        if (!container) return;
+        container.innerHTML = Array.from({ length: count }, () => `
+          <div class="card-placeholder">${label}</div>
+        `).join('');
+      };
+
+      const drawFromDeck = (deck, count) => Array.from({ length: count }, () => deck.pop());
+
+      const randomItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
+
+      const suitMap = { S: '♠', H: '♥', D: '♦', C: '♣' };
+
+      const parseCardsInput = (input, limit) => {
+        if (!input) return [];
+        const normalized = input.replace(/\s+/g, '').toUpperCase();
+        const tokens = normalized.match(/(10|[2-9TJQKA])[SHDC]/g) || [];
+        const cards = tokens.map(token => {
+          const rankPart = token.slice(0, token.length - 1).replace('10', 'T');
+          const suitChar = token.slice(-1);
+          const suitSymbol = suitMap[suitChar];
+          if (!suitSymbol || !rankValues[rankPart]) return null;
+          return { rank: rankPart, suit: suitSymbol };
+        }).filter(Boolean);
+        return typeof limit === 'number' ? cards.slice(0, limit) : cards;
+      };
+
+      const describeBoardTexture = (board) => {
+        if (!board.length) return 'No community cards yet.';
+        const suitCounts = board.reduce((acc, card) => {
+          acc[card.suit] = (acc[card.suit] || 0) + 1;
+          return acc;
+        }, {});
+        const rankCounts = board.reduce((acc, card) => {
+          const value = rankValues[card.rank];
+          acc[value] = (acc[value] || 0) + 1;
+          return acc;
+        }, {});
+        const maxSuit = Math.max(...Object.values(suitCounts));
+        const isMonotone = maxSuit === board.length;
+        const isTwoTone = maxSuit === board.length - 1;
+        const paired = Object.values(rankCounts).some(count => count >= 2);
+        const values = board.map(card => rankValues[card.rank]).sort((a, b) => b - a);
+        const span = values[0] - values[values.length - 1];
+        const connected = span <= 4;
+        const tags = [];
+        if (isMonotone) tags.push('Monotone (flush-heavy)');
+        else if (isTwoTone) tags.push('Two-tone board');
+        else tags.push('Rainbow/dry');
+        if (paired) tags.push('Paired texture');
+        if (connected) tags.push('Connected runout');
+        else tags.push('Disconnected ranks');
+        return tags.join(' · ');
+      };
+
+      const detectDraws = (hero, board) => {
+        const combined = [...hero, ...board];
+        if (!combined.length) return { flushDraw: false, flushMade: false, straightInfo: null };
+        const suitCounts = combined.reduce((acc, card) => {
+          acc[card.suit] = (acc[card.suit] || 0) + 1;
+          return acc;
+        }, {});
+        const maxSuit = Math.max(...Object.values(suitCounts));
+        const flushMade = maxSuit >= 5;
+        const flushDraw = !flushMade && maxSuit === 4;
+        const values = [...new Set(combined.map(card => rankValues[card.rank]).sort((a, b) => a - b))];
+        const straightInfo = (() => {
+          if (values.length < 4) return null;
+          for (let i = 0; i <= values.length - 4; i += 1) {
+            const seq = values.slice(i, i + 4);
+            if (seq[3] - seq[0] === 3) return { type: 'Open-ended', outs: 8 };
+            if (seq[3] - seq[0] <= 4) return { type: 'Gutshot', outs: 4 };
+          }
+          if (values.includes(14)) {
+            const wheel = [2, 3, 4, 5];
+            if (wheel.every(v => values.includes(v))) return { type: 'Open-ended', outs: 8 };
+          }
+          return null;
+        })();
+        return { flushDraw, flushMade, straightInfo };
+      };
+
+      const computeStackZone = (stack) => {
+        if (stack < 15) return { zone: 'Short', note: 'Short stack—lean on shove/fold decisions.' };
+        if (stack < 30) return { zone: 'Middle', note: 'Mid stack—keep pots controllable.' };
+        return { zone: 'Deep', note: 'Deep stack—pressure post-flop and mix in traps.' };
+      };
+
+      const preflopTier = (hand) => {
+        const values = hand.map(card => rankValues[card.rank]).sort((a, b) => b - a);
+        const suited = hand[0].suit === hand[1].suit;
+        const pair = values[0] === values[1];
+        const gap = Math.abs(values[0] - values[1]);
+        let label = 'Speculative connectors';
+        let note = 'Playable if unopened; prefer calling in blinds.';
+        let sizing = '2.2';
+        let score = 0.35;
+        if (pair && values[0] >= 12) {
+          label = 'Premium pair';
+          note = 'Raise/3-bet and stack off comfortably.';
+          sizing = '2.5';
+          score = 0.9;
+        } else if (pair && values[0] >= 9) {
+          label = 'Strong pocket pair';
+          note = 'Open from all seats; 4-bet vs aggressive villains.';
+          sizing = '2.3';
+          score = 0.75;
+        } else if (suited && values[0] >= 12 && gap <= 3) {
+          label = 'Suited broadway';
+          note = 'Great blocker hand—raise and barrel flops.';
+          sizing = '2.2';
+          score = 0.68;
+        } else if (values[0] >= 13 && values[1] >= 10) {
+          label = 'High broadway combo';
+          note = 'Open and call 3-bets in position.';
+          sizing = '2.2';
+          score = 0.62;
+        } else if (suited && gap <= 4) {
+          label = 'Playable suited connector';
+          note = 'Open from late seats; defend blinds vs small opens.';
+          sizing = '2.1';
+          score = 0.55;
+        } else if (pair) {
+          label = 'Set mine pair';
+          note = 'Call vs raises when deep; fold to big 3-bets.';
+          sizing = '2.0';
+          score = 0.5;
+        }
+        return { label, note, sizing, score };
+      };
+
+      const bestHandValue = (cards) => {
+        if (cards.length < 5) return null;
+        let best = null;
+        const combo = [];
+        const choose = (start) => {
+          if (combo.length === 5) {
+            const value = evaluateFive(combo);
+            if (!best || compareValues(value, best) > 0) {
+              best = value;
+            }
+            return;
+          }
+          for (let i = start; i < cards.length; i += 1) {
+            combo.push(cards[i]);
+            choose(i + 1);
+            combo.pop();
+          }
+        };
+        choose(0);
+        return best;
+      };
+
+      const evaluateFive = (cards) => {
+        const values = cards.map(card => rankValues[card.rank]).sort((a, b) => b - a);
+        const suitsSet = cards.map(card => card.suit);
+        const counts = {};
+        values.forEach(val => { counts[val] = (counts[val] || 0) + 1; });
+        const entries = Object.entries(counts).map(([value, count]) => ({ value: Number(value), count }));
+        entries.sort((a, b) => (b.count === a.count ? b.value - a.value : b.count - a.count));
+        const isFlush = suitsSet.every(suit => suit === suitsSet[0]);
+        const straightHigh = getStraightHigh(values);
+        let category = 0;
+        let tiebreak = values.slice();
+        if (isFlush && straightHigh) {
+          category = 8;
+          tiebreak = [straightHigh];
+        } else if (entries[0].count === 4) {
+          category = 7;
+          const kicker = values.find(v => v !== entries[0].value);
+          tiebreak = [entries[0].value, kicker];
+        } else if (entries[0].count === 3 && entries[1] && entries[1].count === 2) {
+          category = 6;
+          tiebreak = [entries[0].value, entries[1].value];
+        } else if (isFlush) {
+          category = 5;
+        } else if (straightHigh) {
+          category = 4;
+          tiebreak = [straightHigh];
+        } else if (entries[0].count === 3) {
+          category = 3;
+          const kickers = values.filter(v => v !== entries[0].value).slice(0, 2);
+          tiebreak = [entries[0].value, ...kickers];
+        } else if (entries[0].count === 2 && entries[1] && entries[1].count === 2) {
+          category = 2;
+          const highPair = Math.max(entries[0].value, entries[1].value);
+          const lowPair = Math.min(entries[0].value, entries[1].value);
+          const kicker = values.find(v => v !== highPair && v !== lowPair);
+          tiebreak = [highPair, lowPair, kicker];
+        } else if (entries[0].count === 2) {
+          category = 1;
+          const kickers = values.filter(v => v !== entries[0].value).slice(0, 3);
+          tiebreak = [entries[0].value, ...kickers];
+        }
+        return { category, ranks: tiebreak, label: buildLabel(category, tiebreak) };
+      };
+
+      const getStraightHigh = (values) => {
+        const unique = [...new Set(values)].sort((a, b) => b - a);
+        if (unique.length < 5) return null;
+        for (let i = 0; i <= unique.length - 5; i += 1) {
+          const slice = unique.slice(i, i + 5);
+          if (slice[0] - slice[4] === 4) return slice[0];
+        }
+        if (unique.includes(14) && unique.includes(5) && unique.includes(4) && unique.includes(3) && unique.includes(2)) {
+          return 5;
+        }
+        return null;
+      };
+
+      const compareValues = (a, b) => {
+        if (a.category !== b.category) return a.category - b.category;
+        for (let i = 0; i < Math.max(a.ranks.length, b.ranks.length); i += 1) {
+          const diff = (a.ranks[i] || 0) - (b.ranks[i] || 0);
+          if (diff !== 0) return diff;
+        }
+        return 0;
+      };
+
+      const buildLabel = (category, ranksArr) => {
+        const rankChar = (value) => ranks[value - 2] || 'X';
+        const labels = ['High card', 'Pair', 'Two pair', 'Trips', 'Straight', 'Flush', 'Full house', 'Four of a kind', 'Straight flush'];
+        if (category === 0) return `${labels[category]} (${rankChar(ranksArr[0])}-high)`;
+        if (category === 1) return `Pair of ${rankChar(ranksArr[0])}s`;
+        if (category === 2) return `Two pair ${rankChar(ranksArr[0])}/${rankChar(ranksArr[1])}`;
+        if (category === 3) return `Trips ${rankChar(ranksArr[0])}`;
+        if (category === 4) return `Straight (${rankChar(ranksArr[0])}-high)`;
+        if (category === 5) return `Flush ${rankChar(ranksArr[0])}-high`;
+        if (category === 6) return `Full house ${rankChar(ranksArr[0])}s/${rankChar(ranksArr[1])}s`;
+        if (category === 7) return `Quads ${rankChar(ranksArr[0])}`;
+        return `Straight flush (${rankChar(ranksArr[0])}-high)`;
+      };
+
+      const updateRangeOverlay = (score = 0.5) => {
+        const clamped = Math.min(1, Math.max(0, score));
+        const high = 0.3 + clamped * 0.4;
+        const mid = 0.4 - clamped * 0.2;
+        const low = Math.max(0.1, 1 - high - mid);
+        const values = [high, mid, low];
+        rangeBars.forEach((bar, idx) => {
+          bar.style.setProperty('--fill', values[idx]);
+          bar.title = `${bar.classList.contains('high') ? 'Top' : bar.classList.contains('mid') ? 'Middle' : 'Low'} range: ${Math.round(values[idx] * 100)}%`;
+        });
+      };
+
+      const updatePotOdds = () => {
+        const needed = trainerState.bet / (trainerState.pot + trainerState.bet);
+        potOddsEl.textContent = `You invest ${trainerState.bet.toFixed(1)} to win ${(trainerState.pot + trainerState.bet).toFixed(1)} (${Math.round(needed * 100)}% needed)`;
+      };
+
+      const updateHints = (hints, villainModel) => {
+        hintListEl.innerHTML = hints.map(hint => `<li>${hint}</li>`).join('');
+        villainTypeEl.textContent = `${villainModel.name} — ${villainModel.tagline}`;
+      };
+
+      const updateRecap = () => {
+        if (!recapListEl) return;
+        recapListEl.innerHTML = trainerState.log.map(entry => `
+          <li><strong>${entry.street}:</strong> ${entry.action}${entry.reason ? ` — ${entry.reason}` : ''}</li>
+        `).join('');
+      };
+
+      const buildAdvice = (street, context) => {
+        const villain = context.villainModel;
+        if (street === 'Preflop') {
+          return `Raise ${context.preTier.sizing} BB from ${trainerState.heroPosition}. ${context.preTier.note}`;
+        }
+        if (!context.madeHand) {
+          return `Mostly draws. ${villain.name === 'TAG' ? 'Use small c-bets to realize equity.' : 'Semi-bluff sparingly; value bet thinner.'}`;
+        }
+        if (context.madeHand.category >= 5) {
+          return `Crushes boards (${context.madeHand.label}). Value bet ${villain.name === 'Loose-passive' ? 'bigger' : 'balanced'} sizing.`;
+        }
+        if (context.madeHand.category >= 3) {
+          return `Strong made hand (${context.madeHand.label}). Pressure ${villain.name} when they cap ranges.`;
+        }
+        return `Marginal showdown (${context.madeHand.label}). Pot-control vs aggression; take free cards when possible.`;
+      };
+
+      const buildContext = (street, boardCards) => {
+        const villainModel = opponentModels[trainerState.villainType];
+        const preTier = preflopTier(trainerState.hero);
+        const madeHand = boardCards.length >= 3 ? bestHandValue([...trainerState.hero, ...boardCards]) : null;
+        const hints = [];
+        if (street === 'Preflop') {
+          hints.push(`Hole cards: ${preTier.label}.`);
+        }
+        if (madeHand) {
+          hints.push(`Made hand: ${madeHand.label}.`);
+        } else if (boardCards.length) {
+          hints.push('No made hand yet—leverage position and fold equity.');
+        }
+        hints.push(`Villain: ${villainModel.summary}`);
+        const score = street === 'Preflop'
+          ? preTier.score
+          : madeHand
+            ? Math.min(0.95, 0.4 + (madeHand.category / 8) * 0.5)
+            : 0.45;
+        return {
+          villainModel,
+          preTier,
+          madeHand,
+          hints,
+          advice: buildAdvice(street, { villainModel, preTier, madeHand }),
+          score,
+        };
+      };
+
+      const updateMetricsUI = () => {
+        const accuracyEl = document.getElementById('metric-accuracy');
+        const aggressionEl = document.getElementById('metric-aggression');
+        const foldEl = document.getElementById('metric-fold');
+        const weeklyGrid = document.getElementById('weekly-grid');
+        const accuracy = metrics.totalDecisions ? Math.round((metrics.correctDecisions / metrics.totalDecisions) * 100) : 0;
+        const aggression = metrics.totalDecisions ? Math.round((metrics.aggressionActions / metrics.totalDecisions) * 100) : 0;
+        const fold = metrics.totalDecisions ? Math.round((metrics.foldActions / metrics.totalDecisions) * 100) : 0;
+        if (accuracyEl) accuracyEl.textContent = `${accuracy}%`;
+        if (aggressionEl) aggressionEl.textContent = `${aggression}%`;
+        if (foldEl) foldEl.textContent = `${fold}%`;
+        if (weeklyGrid) {
+          if (!metrics.weeklyHands.length) {
+            weeklyGrid.innerHTML = `
+              <article class="weekly-card glass">
+                <p class="label">Weekly summary</p>
+                <p class="value small">Play a few hands to unlock trends.</p>
+              </article>
+            `;
+          } else {
+            weeklyGrid.innerHTML = metrics.weeklyHands.slice(-3).map(hand => `
+              <article class="weekly-card glass">
+                <p class="label">${hand.title}</p>
+                <p class="value small">${hand.note}</p>
+              </article>
+            `).join('');
+          }
+        }
+      };
+
+      const renderActions = () => {
+        actionsEl.innerHTML = currentActions.map(action => `
+          <button class="cta ${action.primary ? 'primary' : 'ghost'}" data-action="${action.id}">${action.label}</button>
+        `).join('');
+      };
+
+      const buildActions = (street, context) => {
+        const adaptive = trainerState.adaptive || { bluffBoost: 0, tighten: false };
+        if (street === 'Preflop') {
+          return [
+            { id: 'open', label: `Open ${context.preTier.sizing} BB`, primary: true, reason: context.preTier.note, type: 'bet' },
+            { id: 'fold', label: 'Fold', primary: false, reason: 'Tight option vs early aggression.', result: 'fold' },
+          ];
+        }
+        if (street === 'River') {
+          return [
+            { id: 'value', label: 'Value bet 40%', primary: true, reason: 'Block bet thin vs callers.', type: 'bet' },
+            { id: 'check', label: 'Check and realize', primary: false, reason: 'Keep pot small when showdown value exists.', type: 'check' },
+          ];
+        }
+        if (!context.madeHand || context.madeHand.category <= 2) {
+          const bluffLabel = adaptive.bluffBoost ? 'Bet 45% (pressure)' : 'Bet 35% (semi-bluff)';
+          const bluffReason = adaptive.bluffBoost
+            ? 'You are over-folding—fire more to balance ranges.'
+            : 'Apply pressure with equity.';
+          return [
+            { id: 'semi', label: bluffLabel, primary: true, reason: bluffReason, type: 'bet' },
+            { id: 'check', label: adaptive.tighten ? 'Check / control' : 'Check evaluate', primary: false, reason: adaptive.tighten ? 'Recent over-aggression—slow down.' : 'Take your equity and control pot.', type: 'check' },
+          ];
+        }
+        const valueLabel = adaptive.tighten ? 'Bet 50% (careful)' : 'Bet 60%';
+        const valueReason = adaptive.tighten ? 'Value bet but avoid bloating vs aggression.' : 'Value bet and deny equity.';
+        return [
+          { id: 'bet', label: valueLabel, primary: true, reason: valueReason, type: 'bet' },
+          { id: 'potcontrol', label: 'Check for pot control', primary: false, reason: 'Keep weaker hands in and avoid check-raises.', type: 'check' },
+        ];
+      };
+
+      const updateState = () => {
+        const street = streetOrder[trainerState.stageIndex];
+        const boardCards = trainerState.boardFull.slice(0, boardReveal[street]);
+        modeLabel.textContent = `${trainerMode.charAt(0).toUpperCase() + trainerMode.slice(1)} mode`;
+        streetLabel.textContent = street;
+        heroSpot.textContent = `${trainerState.heroPosition} · ${trainerState.heroStack} BB`;
+        villainSpot.textContent = `${trainerState.villainPosition} · ${trainerState.villainStack} BB`;
+        renderCards(heroCardsEl, trainerState.hero);
+        renderCards(boardEl, boardCards);
+        const context = buildContext(street, boardCards);
+        adviceEl.textContent = context.advice;
+        updateRangeOverlay(context.score);
+        updatePotOdds();
+        updateHints(context.hints, context.villainModel);
+        updateMetricsUI();
+        if (street === 'Showdown') {
+          runShowdown();
+          return;
+        }
+        currentActions = buildActions(street, context);
+        renderActions();
+      };
+
+      const runShowdown = () => {
+        let summary = trainerState.resultText;
+        let heroValue = null;
+        let villainValue = null;
+        if (!trainerState.folded) {
+          heroValue = bestHandValue([...trainerState.hero, ...trainerState.boardFull]);
+          villainValue = bestHandValue([...trainerState.villain, ...trainerState.boardFull]);
+          if (heroValue && villainValue) {
+            const diff = compareValues(heroValue, villainValue);
+            summary = diff >= 0
+              ? `Hero wins with ${heroValue.label}.`
+              : `Villain (${trainerState.villainType}) wins with ${villainValue.label}.`;
+          } else {
+            summary = 'Hand resolved.';
+          }
+        }
+        adviceEl.textContent = summary;
+        trainerState.log.push({ street: 'Showdown', action: summary, reason: '' });
+        updateRecap();
+        metrics.weeklyHands.push({
+          title: heroValue ? heroValue.label : 'Hand recap',
+          note: trainerState.folded ? 'Disciplined fold saved chips.' : summary,
+        });
+        updateMetricsUI();
+        currentActions = [{ id: 'new', label: 'Start new guided hand', primary: true, reason: 'Fresh scenario' }];
+        renderCards(boardEl, trainerState.boardFull);
+        renderActions();
+      };
+
+      const startHand = (mode = trainerMode) => {
+        trainerMode = mode;
+        trainerState.mode = mode;
+        trainerState.deck = shuffle(createDeck());
+        trainerState.hero = drawCards(2);
+        trainerState.villain = drawCards(2);
+        trainerState.boardFull = drawCards(5);
+        trainerState.stageIndex = 0;
+        trainerState.villainType = randomItem(Object.keys(opponentModels));
+        trainerState.heroStack = Math.floor(30 + Math.random() * 30);
+        trainerState.villainStack = Math.floor(28 + Math.random() * 30);
+        trainerState.heroPosition = randomItem(positions);
+        trainerState.villainPosition = randomItem(positions.filter(pos => pos !== trainerState.heroPosition)) || randomItem(positions);
+        trainerState.pot = 3.2 + Math.random();
+        trainerState.bet = 1 + Math.random();
+        trainerState.log = [];
+        trainerState.folded = false;
+        trainerState.resultText = '';
+        trainerState.adaptive = trainerState.adaptive || { bluffBoost: 0, tighten: false };
+        updateRecap();
+        updateState();
+      };
+
+      const handleAction = (actionId) => {
+        const action = currentActions.find(item => item.id === actionId);
+        if (!action) return;
+        const street = streetOrder[trainerState.stageIndex];
+        trainerState.log.push({ street, action: action.label, reason: action.reason });
+        updateRecap();
+        metrics.totalDecisions += 1;
+        if (action.type === 'bet') metrics.aggressionActions += 1;
+        if (action.result === 'fold') metrics.foldActions += 1;
+        if (action.primary) metrics.correctDecisions += 1;
+        if (metrics.totalDecisions % 4 === 0) {
+          trainerState.adaptive = trainerState.adaptive || { bluffBoost: 0, tighten: false };
+          const accuracy = metrics.correctDecisions / metrics.totalDecisions;
+          if (accuracy < 0.5) {
+            trainerState.adaptive.tighten = true;
+            trainerState.adaptive.bluffBoost = 0;
+            trainerState.log.push({ street, action: 'Adaptive coaching', reason: 'Hints: slow down, take pot-control lines.' });
+          } else if (metrics.foldActions / metrics.totalDecisions > 0.4) {
+            trainerState.adaptive.bluffBoost = 1;
+            trainerState.adaptive.tighten = false;
+            trainerState.log.push({ street, action: 'Adaptive coaching', reason: 'Hints: add aggression to avoid being exploited.' });
+          } else {
+            trainerState.adaptive.bluffBoost = 0;
+            trainerState.adaptive.tighten = false;
+          }
+        }
+        updateMetricsUI();
+        if (action.id === 'new') {
+          startHand(trainerMode);
+          return;
+        }
+        if (action.result === 'fold') {
+          trainerState.folded = true;
+          trainerState.resultText = 'You folded—villain scoops the pot.';
+          trainerState.stageIndex = streetOrder.length - 1;
+          updateState();
+          return;
+        }
+        if (street === 'River') {
+          trainerState.stageIndex = streetOrder.length - 1;
+          updateState();
+          return;
+        }
+        trainerState.pot += action.type === 'bet' ? trainerState.bet : 0.4;
+        trainerState.bet = 0.9 + Math.random() * 1.2;
+        trainerState.stageIndex += 1;
+        updateState();
+      };
+
+      actionsEl.addEventListener('click', (event) => {
+        const btn = event.target.closest('button[data-action]');
+        if (!btn) return;
+        handleAction(btn.dataset.action);
+      });
+
+      modeButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          modeButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          trainerMode = btn.dataset.mode;
+          startHand(trainerMode);
+        });
+      });
+
+      const hintToggle = () => {
+        hintsEnabled = !hintsEnabled;
+        hintLabel.textContent = hintsEnabled ? 'Hints on' : 'Hints off';
+        if (hintPanelEl) hintPanelEl.classList.toggle('muted', !hintsEnabled);
+        if (hintListEl) hintListEl.style.opacity = hintsEnabled ? '1' : '0.4';
+      };
+
+      hintLabel.addEventListener('click', hintToggle);
+
+      const startBtn = document.getElementById('start-guided');
+      const launchBtn = document.getElementById('launch-table');
+      if (startBtn) startBtn.addEventListener('click', () => startHand(trainerMode));
+      if (launchBtn) launchBtn.addEventListener('click', () => startHand(trainerMode));
+
+      startHand('guided');
+
+      // Progress / quests mock
+      const progressList = document.getElementById('progress-list');
+      const progressBar = document.getElementById('progress-bar');
+      const levelTitle = document.getElementById('level-title');
+      const questsEl = document.getElementById('quests');
+      const badgeGrid = document.getElementById('badge-grid');
+      const streakValue = document.getElementById('streak-value');
+      const streakNote = document.getElementById('streak-note');
+      const progression = {
+        title: 'Level 4 · Positional Aggression',
+        stats: [
+          { name: 'Pot odds', value: 80 },
+          { name: 'Opening ranges', value: 68 },
+          { name: 'Blind defense', value: 52 },
+        ],
+        quests: [
+          'Win 3 pots with float bets.',
+          'Identify 2 bluff-catch spots.',
+          'Fold vs. 3-bet out of position twice.',
+        ],
+        streak: { days: 6, note: 'Daily focus streak—keep the momentum.' },
+        badges: [
+          { title: 'Correct fold vs. big raise', earned: true },
+          { title: 'Calculated pot odds', earned: true },
+          { title: '3 streets of value', earned: false },
+          { title: 'Protected blinds smartly', earned: false },
+        ],
+      };
+      levelTitle.textContent = progression.title;
+      progressList.innerHTML = progression.stats.map(s => `<li><span>${s.name}</span><span>${s.value}%</span></li>`).join('');
+      progressBar.style.width = `${progression.stats[1].value}%`;
+      questsEl.innerHTML = progression.quests.slice(0, 2).map(q => `<div class="quest glass"><p class="label">Quest</p><p class="value">${q}</p></div>`).join('');
+      if (streakValue) streakValue.textContent = `${progression.streak.days}-day streak`;
+      if (streakNote) streakNote.textContent = progression.streak.note;
+      if (badgeGrid) {
+        badgeGrid.innerHTML = progression.badges.map(badge => `<span class="badge-tag ${badge.earned ? 'earned' : ''}">${badge.title}</span>`).join('');
+      }
+
+      // Scenario Lab logic
+      const labForm = document.getElementById('lab-form');
+      const labLine = document.getElementById('lab-line');
+      const labAlt = document.getElementById('lab-alt');
+
+      const analyzeScenario = (formData) => {
+        const position = formData.get('position') || 'Button';
+        const stack = parseInt(formData.get('stack'), 10) || 40;
+        const villainType = formData.get('villain') || 'TAG';
+        const street = formData.get('street') || 'Flop';
+        const boardInput = (formData.get('board') || '').trim();
+        const handInput = (formData.get('hand') || '').trim();
+        const heroCards = parseCardsInput(handInput, 2);
+        if (heroCards.length < 2) {
+          return { error: 'Enter two hole cards, e.g., AsKd.' };
+        }
+        const expected = boardReveal[street] || 0;
+        const boardCards = parseCardsInput(boardInput, 5).slice(0, expected);
+        if (boardCards.length < expected) {
+          return { error: `Provide at least ${expected} board cards for the ${street.toLowerCase()}.` };
+        }
+        const villainModel = opponentModels[villainType] || opponentModels.TAG;
+        const stackZone = computeStackZone(stack);
+        const preTier = preflopTier(heroCards);
+        const madeHand = expected >= 3 ? bestHandValue([...heroCards, ...boardCards]) : null;
+        const draws = detectDraws(heroCards, boardCards);
+        const texture = describeBoardTexture(boardCards);
+        let recommendation = '';
+        const alternatives = [];
+
+        if (street === 'Preflop') {
+          recommendation = `${preTier.label}: open ${preTier.sizing} BB from ${position}. ${stackZone.note}`;
+          alternatives.push(`Exploit ${villainModel.name}: ${villainModel.exploit}`);
+          alternatives.push(preTier.score > 0.7 ? 'Prepared to 4-bet if pressured.' : 'Fold to big 3-bets out of position.');
+        } else {
+          if (madeHand && madeHand.category >= 5) {
+            recommendation = `Value bet big (${madeHand.label}). ${villainModel.name === 'Loose-passive' ? 'Use 60%+' : 'Mix 50-70%'} sizing.`;
+          } else if (madeHand && madeHand.category >= 3) {
+            recommendation = `Protected showdown (${madeHand.label}). Bet/fold vs heavy aggression.`;
+          } else if (draws.flushDraw || draws.straightInfo) {
+            const drawText = draws.flushDraw
+              ? 'flush draw (~9 outs)'
+              : `${draws.straightInfo.type.toLowerCase()} straight draw (~${draws.straightInfo.outs} outs)`;
+            recommendation = `Semi-bluff ${drawText}. ${villainModel.fold > 0.4 ? 'Leverage fold equity.' : 'Favor pot control and implied odds.'}`;
+          } else {
+            recommendation = 'Marginal holding. Check back and realize equity; fold vs large aggression.';
+          }
+          alternatives.push(`Stack zone: ${stackZone.zone} — ${stackZone.note}`);
+          alternatives.push(`Board: ${texture}`);
+          if (draws.flushDraw) alternatives.push('Backup: barrel many turn cards that add flush equity.');
+          if (draws.straightInfo) alternatives.push(`Straight draw: ${draws.straightInfo.type} (${draws.straightInfo.outs} outs).`);
+          alternatives.push(`Villain tendency: ${villainModel.summary}`);
+        }
+
+        return {
+          recommendation,
+          alternatives,
+          texture,
+          villainNote: villainModel.summary,
+          drawNote: draws.flushDraw || draws.straightInfo ? 'Leverage equity to pressure capped ranges.' : '',
+        };
+      };
+
+      const runScenario = () => {
+        if (!labForm || !labLine) return;
+        const result = analyzeScenario(new FormData(labForm));
+        if (result.error) {
+          labLine.textContent = result.error;
+          if (labAlt) labAlt.innerHTML = '';
+          return;
+        }
+        labLine.textContent = result.recommendation;
+        if (labAlt) {
+          labAlt.innerHTML = `
+            <ul>${result.alternatives.map(item => `<li>${item}</li>`).join('')}</ul>
+            <p class="label">Villain note</p>
+            <p class="alt-note">${result.villainNote}</p>
+            ${result.drawNote ? `<p class="alt-note">${result.drawNote}</p>` : ''}
+          `;
+        }
+      };
+
+      const analyzeBtn = document.getElementById('run-scenario');
+      if (analyzeBtn) analyzeBtn.addEventListener('click', runScenario);
+      if (labForm) {
+        labForm.addEventListener('input', () => {
+          if (labLine) labLine.textContent = 'Ready to analyze...';
+          if (labAlt) labAlt.innerHTML = '';
+        });
+      }
+
+      // Concept library
+      const conceptGrid = document.getElementById('concept-grid');
+      const concepts = [
+        { stage: 'Foundations', copy: 'Rules, hand ranks, betting rounds.', status: 'Ready' },
+        { stage: 'Core math', copy: 'Pot odds, outs, EV as price vs value.', status: 'Ready' },
+        { stage: 'Position & ranges', copy: 'Open/defend ranges by seat; info advantage.', status: 'Locked' },
+        { stage: 'Pre-flop plans', copy: 'Open/3-bet/fold mixes; M-ratio basics.', status: 'Locked' },
+        { stage: 'Post-flop pillars', copy: 'Board texture, c-bets, turn/river plans.', status: 'Locked' },
+        { stage: 'Player types', copy: 'Tags + exploits; fold equity cues.', status: 'Locked' },
+        { stage: 'Tournament/ICM', copy: 'Shove/fold charts, pay-jump discipline.', status: 'Locked' },
+        { stage: 'Review & leaks', copy: 'Hand review loops, notes, bankroll guard.', status: 'Locked' },
+      ];
+      conceptGrid.innerHTML = concepts.map(concept => `
+        <article class="concept glass ${concept.status === 'Locked' ? 'locked' : ''}">
+          <p class="eyebrow">${concept.stage}</p>
+          <p class="value">${concept.copy}</p>
+          <div class="concept-footer">
+            <span class="pill ${concept.status === 'Locked' ? 'hint' : 'live'}">${concept.status}</span>
+            <button class="cta ghost small">View</button>
+          </div>
+        </article>
+      `).join('');
+
+      // Simulation table logic (TableManager + PlayerController)
+      const BANKROLL_KEY = 'pokerMentor.bankroll';
+      const XP_KEY = 'pokerMentor.xp';
+      const BOOST_KEY = 'pokerMentor.boost';
+      const MISSION_KEY = 'pokerMentor.mission';
+
+      const loadNumber = (key, fallback) => {
+        if (typeof localStorage === 'undefined') return fallback;
+        const stored = parseFloat(localStorage.getItem(key));
+        return Number.isFinite(stored) ? stored : fallback;
+      };
+
+      const saveNumber = (key, value) => {
+        if (typeof localStorage === 'undefined') return;
+        localStorage.setItem(key, String(value));
+      };
+
+      const loadMission = () => {
+        if (typeof localStorage === 'undefined') return { target: 30, progress: 0 };
+        try {
+          const stored = JSON.parse(localStorage.getItem(MISSION_KEY) || '{}');
+          return {
+            target: stored.target || 30,
+            progress: stored.progress || 0,
+          };
+        } catch {
+          return { target: 30, progress: 0 };
+        }
+      };
+
+      class PlayerController {
+        constructor(player, profile) {
+          this.player = player;
+          this.profile = profile;
+          this.hud = {
+            aggression: profile.aggression,
+            fold: profile.fold,
+          };
+        }
+
+        decideAction(context) {
+          const tier = preflopTier(this.player.hand);
+          const leakFactor = context.heroLeaks.foldHeavy ? 0.1 : 0;
+          const baseRaise = this.profile.aggression + tier.score * 0.4 - context.pressure * 0.2;
+          const randomBoost = Math.random() * 0.2;
+          const desireToRaise = baseRaise + randomBoost + leakFactor;
+          if (tier.score > 0.75 || desireToRaise > 0.9) {
+            return { type: 'raise', amount: context.minRaise, reason: 'Premium range pressure.' };
+          }
+          const price = context.toCall / (context.pot + context.toCall);
+          const callThreshold = tier.score + (this.profile.fold > 0.5 ? -0.1 : 0.1);
+          if (tier.score >= callThreshold || price < 0.18) {
+            return { type: 'call', amount: context.toCall, reason: 'Set mining / defending range.' };
+          }
+          const reluctant = Math.random() > this.profile.fold;
+          if (reluctant) {
+            return { type: 'call', amount: context.toCall, reason: 'Stick with speculative combo.' };
+          }
+          return { type: 'fold', amount: 0, reason: 'Range bottom folds vs aggression.' };
+        }
+      }
+
+      class TableManager {
+        constructor() {
+          this.ui = {
+            seatCount: document.getElementById('sim-seat-count'),
+            aiMix: document.getElementById('sim-ai-mix'),
+            startBtn: document.getElementById('sim-start'),
+            dealBtn: document.getElementById('sim-deal'),
+            wallet: document.getElementById('sim-wallet'),
+            status: document.getElementById('sim-status'),
+            pot: document.getElementById('sim-pot'),
+            seats: document.getElementById('sim-seats'),
+            actions: document.getElementById('sim-actions'),
+            log: document.getElementById('sim-log'),
+            board: document.getElementById('sim-board'),
+            heroCards: document.getElementById('sim-hero-cards'),
+            mode: document.getElementById('sim-mode'),
+            blinds: document.getElementById('sim-blinds'),
+            stack: document.getElementById('sim-stack'),
+            history: document.getElementById('sim-history'),
+            dealer: document.getElementById('sim-dealer'),
+            hintToggle: document.getElementById('sim-hint-toggle'),
+            missionTitle: document.getElementById('sim-mission-title'),
+            missionProgress: document.getElementById('sim-mission-progress'),
+            xp: document.getElementById('sim-xp'),
+            xpNote: document.getElementById('sim-xp-note'),
+            mission: document.querySelector('.mission'),
+            walletBoost: document.getElementById('sim-bankroll-boost'),
+            chipLayer: document.getElementById('chip-layer'),
+          };
+          this.players = [];
+          this.dealerIndex = 0;
+          this.deck = [];
+          this.board = [];
+          this.pot = 0;
+          this.actionQueue = [];
+          this.awaitingHero = false;
+          this.heroTimer = null;
+          this.heroInBlind = false;
+          this.handActive = false;
+          this.streetIndex = 0;
+          this.streets = ['Preflop', 'Flop', 'Turn', 'River'];
+          this.serverEndpoint = '/api/bot/decision';
+          this.config = {
+            seatCount: 4,
+            mix: 'balanced',
+            mode: 'cash',
+            blinds: 1,
+            startingStack: 120,
+          };
+          this.ledger = {
+            bankroll: loadNumber(BANKROLL_KEY, 500),
+            xp: loadNumber(XP_KEY, 0),
+            mission: loadMission(),
+            heroLeaks: { foldHeavy: false, aggression: 0 },
+            heroStats: { decisions: 0, folds: 0, raises: 0 },
+            summary: [],
+          };
+          this.models = {
+            TAG: opponentModels.TAG,
+            'Loose-passive': opponentModels['Loose-passive'],
+            LAG: opponentModels.LAG,
+            'Tight-passive': opponentModels['Tight-passive'],
+            Balanced: { name: 'Balanced', tagline: 'default safety net', fold: 0.4, aggression: 0.55, exploit: 'Responds to tendencies.' },
+            Exploit: { name: 'Exploit', tagline: 'targets hero leaks', fold: 0.33, aggression: 0.6, exploit: 'Adjusts vs hero patterns.' },
+          };
+          this.mixes = {
+            balanced: ['TAG', 'Loose-passive', 'LAG', 'Tight-passive'],
+            aggressive: ['LAG', 'TAG', 'LAG', 'Balanced'],
+            chill: ['Loose-passive', 'Tight-passive', 'Balanced', 'TAG'],
+            exploit: ['Exploit', 'TAG', 'Balanced', 'Exploit'],
+          };
+          this.bindUI();
+          this.updateWalletUI();
+          this.updateMissionUI();
+          this.updateXPUI();
+        }
+
+        bindUI() {
+          this.ui.startBtn?.addEventListener('click', () => this.startTable());
+          this.ui.dealBtn?.addEventListener('click', () => this.dealHand());
+          this.ui.actions?.addEventListener('click', (event) => {
+            const btn = event.target.closest('[data-sim-action]');
+            if (!btn) return;
+            this.handleHeroInput(btn.dataset.simAction);
+          });
+          this.ui.walletBoost?.addEventListener('click', () => this.applyDailyBoost());
+        }
+
+        applyDailyBoost() {
+          const today = new Date().toISOString().slice(0, 10);
+          const last = localStorage?.getItem(BOOST_KEY);
+          if (last === today) {
+            this.setStatus('Daily boost already claimed.');
+            return;
+          }
+          localStorage?.setItem(BOOST_KEY, today);
+          this.ledger.bankroll += 50;
+          this.saveBankroll();
+          this.updateWalletUI();
+          this.setStatus('Daily boost +50 chips added!');
+        }
+
+        setStatus(text) {
+          if (this.ui.status) this.ui.status.textContent = text;
+        }
+
+        setDealerText() {
+          if (!this.ui.dealer) return;
+          const dealer = this.players[this.dealerIndex];
+          this.ui.dealer.textContent = dealer ? `Dealer: ${dealer.isHero ? 'You' : dealer.name}` : 'Dealer: --';
+        }
+
+        updateWalletUI() {
+          if (this.ui.wallet) this.ui.wallet.textContent = `${Math.round(this.ledger.bankroll)}`;
+        }
+
+        updateMissionUI() {
+          if (this.ui.missionTitle) this.ui.missionTitle.textContent = 'Win 30 chips defending blinds';
+          if (this.ui.missionProgress) this.ui.missionProgress.textContent = `Progress: ${this.ledger.mission.progress} / ${this.ledger.mission.target}`;
+          this.saveMission();
+        }
+
+        updateXPUI() {
+          if (this.ui.xp) this.ui.xp.textContent = `${this.ledger.xp} XP`;
+        }
+
+        saveBankroll() {
+          saveNumber(BANKROLL_KEY, this.ledger.bankroll);
+        }
+
+        saveXP() {
+          saveNumber(XP_KEY, this.ledger.xp);
+        }
+
+        saveMission() {
+          if (typeof localStorage === 'undefined') return;
+          localStorage.setItem(MISSION_KEY, JSON.stringify(this.ledger.mission));
+        }
+
+        startTable() {
+          this.config = {
+            seatCount: parseInt(this.ui.seatCount?.value || '4', 10),
+            mix: this.ui.aiMix?.value || 'balanced',
+            mode: this.ui.mode?.value || 'cash',
+            blinds: parseFloat(this.ui.blinds?.value || '1'),
+            startingStack: parseFloat(this.ui.stack?.value || '120'),
+          };
+          this.players = this.buildPlayers();
+          this.dealerIndex = 0;
+          this.board = [];
+          this.pot = 0;
+           this.streetIndex = 0;
+          renderPlaceholders(this.ui.board, 5);
+          renderPlaceholders(this.ui.heroCards, 2);
+          this.renderSeats();
+          this.renderActions([]);
+          this.clearHistory();
+          this.setStatus('Table ready. Deal a hand when ready.');
+          this.ui.dealBtn && (this.ui.dealBtn.disabled = false);
+          this.updateWalletUI();
+          this.setDealerText();
+        }
+
+        buildPlayers() {
+          const mix = this.mixes[this.config.mix] || this.mixes.balanced;
+          const players = [];
+          const heroStack = Math.max(this.ledger.bankroll, this.config.startingStack);
+          players.push(this.buildPlayer('Hero', 'Hero', heroStack, true));
+          for (let i = 1; i < Math.max(2, this.config.seatCount); i += 1) {
+            const type = mix[(i - 1) % mix.length];
+            const profile = this.models[type] || this.models.TAG;
+            players.push(this.buildPlayer(`AI ${i}`, type, this.config.startingStack, false, profile));
+          }
+          return players;
+        }
+
+        buildPlayer(name, type, stack, isHero, profile) {
+          const player = {
+            name,
+            type,
+            stack,
+            isHero,
+            controller: null,
+            hand: [],
+            active: true,
+            contribution: 0,
+            stats: { hands: 0, showdowns: 0, wins: 0, foldsForced: 0 },
+          };
+          if (!isHero) {
+            player.controller = new PlayerController(player, profile || this.models.TAG);
+          }
+          return player;
+        }
+
+        dealHand() {
+          if (!this.players.length) {
+            this.setStatus('Start the table first.');
+            return;
+          }
+          const eligible = this.players.filter(player => player.stack >= this.config.blinds);
+          if (eligible.length < 2) {
+            this.setStatus('Need at least two stacks above blinds.');
+            return;
+          }
+          this.deck = shuffle(createDeck());
+          this.board = drawFromDeck(this.deck, 5);
+          this.pot = 0;
+          this.streetIndex = 0;
+          this.awaitingHero = false;
+          this.handActive = true;
+          this.players.forEach(player => {
+            player.hand = drawFromDeck(this.deck, 2);
+            player.active = player.stack > 0;
+            player.contribution = 0;
+            player.stats.hands += 1;
+          });
+          this.postBlinds();
+          renderCards(this.ui.heroCards, this.players[0].hand);
+          renderPlaceholders(this.ui.board, 5);
+          this.prepareActionQueue((this.dealerIndex + 3) % this.players.length);
+          this.setStatus('Preflop action. Watch the ring.');
+          this.ui.dealBtn && (this.ui.dealBtn.disabled = true);
+          this.runNextAction();
+          this.updateUI();
+        }
+
+        postBlinds() {
+          this.heroInBlind = false;
+          const smallBlindIndex = (this.dealerIndex + 1) % this.players.length;
+          const bigBlindIndex = (this.dealerIndex + 2) % this.players.length;
+          this.billBlind(this.players[smallBlindIndex], this.config.blinds / 2);
+          this.billBlind(this.players[bigBlindIndex], this.config.blinds);
+          if (this.players[smallBlindIndex]?.isHero || this.players[bigBlindIndex]?.isHero) {
+            this.heroInBlind = true;
+          }
+          this.log(`Blinds posted (${this.config.blinds / 2}/${this.config.blinds}).`);
+        }
+
+        billBlind(player, amount) {
+          if (!player.active) return;
+          const bill = Math.min(amount, player.stack);
+          player.stack -= bill;
+          player.contribution += bill;
+          this.pot += bill;
+          if (player.isHero) {
+            this.ledger.bankroll = player.stack;
+            this.saveBankroll();
+            this.updateWalletUI();
+          }
+        }
+
+        prepareActionQueue(startIndex = (this.dealerIndex + 1) % this.players.length) {
+          this.actionQueue = [];
+          for (let i = 0; i < this.players.length; i += 1) {
+            const idx = (startIndex + i) % this.players.length;
+            const player = this.players[idx];
+            if (player.active && player.stack >= 0) this.actionQueue.push(idx);
+          }
+        }
+
+        runNextAction() {
+          if (!this.handActive) return;
+          if (this.activeCount() === 1) {
+            this.awardUncontestedPot();
+            return;
+          }
+          if (!this.actionQueue.length) {
+            this.finishStreet();
+            return;
+          }
+          const currentIndex = this.actionQueue.shift();
+          const player = this.players[currentIndex];
+          if (!player || !player.active) {
+            this.runNextAction();
+            return;
+          }
+          this.highlightSeat(currentIndex);
+          if (player.isHero) {
+            this.promptHero();
+            return;
+          }
+          const context = {
+            pot: this.pot,
+            toCall: Math.max(0, this.highestContribution() - player.contribution),
+            minRaise: Math.max(this.config.blinds * 2, this.config.blinds + Math.max(0, this.highestContribution() - player.contribution)),
+            pressure: player.contribution / Math.max(1, player.stack + player.contribution),
+            heroLeaks: this.ledger.heroLeaks,
+            street: this.streets[this.streetIndex],
+            board: this.board.slice(0, this.revealedCount()),
+          };
+          this.getBotDecision(player, context).then(decision => {
+            setTimeout(() => {
+              this.applyAction(player, decision.type, decision.amount, decision.reason);
+              if (!this.handActive) return;
+              this.runNextAction();
+            }, 500 + Math.random() * 500);
+          });
+        }
+
+        revealedCount() {
+          if (this.streetIndex === 0) return 0;
+          if (this.streetIndex === 1) return 3;
+          if (this.streetIndex === 2) return 4;
+          return 5;
+        }
+
+        renderBoardStep() {
+          const count = this.revealedCount();
+          renderCards(this.ui.board, this.board.slice(0, count));
+        }
+
+        finishStreet() {
+          if (this.activeCount() <= 1) {
+            this.awardUncontestedPot();
+            return;
+          }
+          if (this.streetIndex < this.streets.length - 1) {
+            this.streetIndex += 1;
+            this.resetContributions();
+            this.renderBoardStep();
+            const nextStart = (this.dealerIndex + 1) % this.players.length;
+            this.prepareActionQueue(nextStart);
+            this.setStatus(`${this.streets[this.streetIndex]} action.`);
+            setTimeout(() => this.runNextAction(), 500);
+          } else {
+            this.revealBoardAndShowdown();
+          }
+        }
+
+        resetContributions() {
+          this.players.forEach(player => {
+            player.contribution = 0;
+          });
+        }
+
+        activeCount() {
+          return this.players.filter(player => player.active).length;
+        }
+
+        awardUncontestedPot() {
+          this.handActive = false;
+          this.actionQueue = [];
+          const winner = this.players.find(player => player.active);
+          if (!winner) {
+            this.completeHand();
+            return;
+          }
+          this.collectChipsAnimation(this.players.map((_, idx) => idx));
+          winner.stack += this.pot;
+          if (winner.isHero) {
+            this.ledger.bankroll = winner.stack;
+            this.saveBankroll();
+            this.updateWalletUI();
+            this.setStatus('You win the pot uncontested.');
+          } else {
+            this.setStatus(`${winner.name} wins uncontested.`);
+          }
+          this.log(`${winner.isHero ? 'You' : winner.name} take the pot uncontested.`);
+          this.pot = 0;
+          this.completeHand();
+        }
+
+        collectChipsAnimation(indices = []) {
+          const layer = this.ui.chipLayer;
+          const seatsContainer = this.ui.seats;
+          if (!layer || !seatsContainer) return;
+          const boardRect = this.ui.board?.getBoundingClientRect();
+          const layerRect = layer.getBoundingClientRect();
+          if (!boardRect || !layerRect) return;
+          const targetX = boardRect.left + boardRect.width / 2;
+          const targetY = boardRect.top + boardRect.height / 2;
+          indices.forEach(idx => {
+            const seatCard = seatsContainer.children[idx];
+            if (!seatCard) return;
+            const seatRect = seatCard.getBoundingClientRect();
+            const chip = document.createElement('span');
+            chip.className = 'chip-flight';
+            const fromX = seatRect.left + seatRect.width / 2 - targetX;
+            const fromY = seatRect.top + seatRect.height / 2 - targetY;
+            chip.style.left = `${targetX - layerRect.left}px`;
+            chip.style.top = `${targetY - layerRect.top}px`;
+            chip.style.setProperty('--from-x', `${fromX}px`);
+            chip.style.setProperty('--from-y', `${fromY}px`);
+            chip.style.setProperty('--to-x', '0px');
+            chip.style.setProperty('--to-y', '0px');
+            layer.appendChild(chip);
+            setTimeout(() => chip.remove(), 1200);
+          });
+        }
+
+        getBotDecision(player, context) {
+          if (!window.fetch) {
+            return Promise.resolve(player.controller.decideAction(context));
+          }
+          return fetch(this.serverEndpoint, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              seat: player.name,
+              type: player.type,
+              context,
+            }),
+          }).then(async response => {
+            if (!response.ok) throw new Error('server');
+            const data = await response.json();
+            if (data && data.type) return data;
+            throw new Error('invalid');
+          }).catch(() => player.controller.decideAction(context));
+        }
+
+        highlightSeat(index) {
+          if (!this.ui.seats) return;
+          const cards = this.ui.seats.querySelectorAll('.seat-card');
+          cards.forEach((card, idx) => {
+            let ring = card.querySelector('.seat-action-ring');
+            if (idx === index && this.players[idx].active) {
+              if (!ring) {
+                ring = document.createElement('div');
+                ring.className = 'seat-action-ring';
+                card.appendChild(ring);
+              }
+            } else if (ring) {
+              ring.remove();
+            }
+          });
+        }
+
+        highestContribution() {
+          return Math.max(...this.players.map(player => player.contribution));
+        }
+
+        promptHero() {
+          if (!this.handActive) return;
+          const toCall = Math.max(0, this.highestContribution() - this.players[0].contribution);
+          const actions = ['fold'];
+          if (toCall > 0 && this.players[0].stack >= toCall) actions.push('call');
+          actions.push('raise');
+          this.renderActions(actions, toCall);
+          this.awaitingHero = true;
+          this.startHeroTimer();
+          if (this.ui.hintToggle?.checked) {
+            const tier = preflopTier(this.players[0].hand);
+            this.setStatus(`Hint: ${tier.label}. ${tier.note}`);
+          } else {
+            this.setStatus('Your move.');
+          }
+        }
+
+        startHeroTimer() {
+          clearTimeout(this.heroTimer);
+          this.heroTimer = setTimeout(() => {
+            if (!this.awaitingHero) return;
+            this.applyAction(this.players[0], 'fold', 0, 'Auto-fold (timer).');
+            this.awaitingHero = false;
+            this.renderActions([]);
+            if (!this.handActive) return;
+            this.runNextAction();
+          }, 12000);
+        }
+
+        handleHeroInput(action) {
+          if (!this.awaitingHero || !this.handActive) return;
+          clearTimeout(this.heroTimer);
+          const toCall = Math.max(0, this.highestContribution() - this.players[0].contribution);
+          const amount = action === 'raise' ? Math.min(this.config.blinds * 2, this.players[0].stack) : toCall;
+          this.applyAction(this.players[0], action, amount, 'Hero action');
+          this.awaitingHero = false;
+          this.renderActions([]);
+          if (!this.handActive) return;
+          this.runNextAction();
+        }
+
+        renderActions(actions, toCall = 0) {
+          if (!this.ui.actions) return;
+          const labels = {
+            fold: 'Fold',
+            call: `Call ${toCall.toFixed(1)}`,
+            raise: `Raise ${Math.max(this.config.blinds * 2, toCall + this.config.blinds).toFixed(1)}`,
+          };
+          this.ui.actions.innerHTML = actions.map(action => `
+            <button class="cta ${action === 'raise' ? 'primary' : 'ghost'}" data-sim-action="${action}">${labels[action]}</button>
+          `).join('');
+        }
+
+        updateHeroLeaks() {
+          const { decisions, folds, raises } = this.ledger.heroStats;
+          if (decisions < 5) return;
+          const foldRate = folds / decisions;
+          const aggressionRate = raises / decisions;
+          this.ledger.heroLeaks.foldHeavy = foldRate > 0.55;
+          this.ledger.heroLeaks.aggression = aggressionRate;
+          if (this.ledger.heroLeaks.foldHeavy) {
+            this.setStatus('Coaching: You are folding too often preflop. Try defending wider.');
+          }
+        }
+
+        applyAction(player, type, amount, reason) {
+          if (type === 'fold') {
+            player.active = false;
+            this.log(`${player.isHero ? 'You' : player.name} fold. ${reason || ''}`);
+            if (player.isHero) {
+              this.ledger.heroStats.decisions += 1;
+              this.ledger.heroStats.folds += 1;
+              this.updateHeroLeaks();
+            }
+            this.updateUI();
+            if (this.activeCount() === 1) {
+              this.awardUncontestedPot();
+            }
+            return;
+          }
+          const cost = Math.min(player.stack, amount);
+          player.stack -= cost;
+          player.contribution += cost;
+          this.pot += cost;
+          if (player.isHero) {
+            this.ledger.bankroll = player.stack;
+            this.saveBankroll();
+            this.updateWalletUI();
+            this.ledger.heroStats.decisions += 1;
+            if (type === 'raise') this.ledger.heroStats.raises += 1;
+            this.updateHeroLeaks();
+          }
+          if (type === 'raise') {
+            const idx = this.players.indexOf(player);
+            // allow others chance to respond
+            this.players.forEach((p, i) => {
+              if (i !== idx && p.active && !this.actionQueue.includes(i)) this.actionQueue.push(i);
+            });
+          }
+          this.log(`${player.isHero ? 'You' : player.name} ${type}s ${type === 'fold' ? '' : cost.toFixed(1)}. ${reason || ''}`);
+          this.updateUI();
+          if (this.activeCount() === 1) {
+            this.awardUncontestedPot();
+          }
+        }
+
+        revealBoardAndShowdown() {
+          renderCards(this.ui.board, this.board);
+          const contenders = this.players.filter(player => player.active);
+          contenders.forEach(player => { player.stats.showdowns += 1; });
+          if (!contenders.length) {
+            this.pot = 0;
+            this.completeHand();
+            return;
+          }
+          let best = null;
+          let winners = [];
+          contenders.forEach(player => {
+            const value = bestHandValue([...player.hand, ...this.board]);
+            if (!best || compareValues(value, best) > 0) {
+              best = value;
+              winners = [{ player, value }];
+            } else if (compareValues(value, best) === 0) {
+              winners.push({ player, value });
+            }
+          });
+          winners.forEach(entry => { entry.player.stats.wins += entry.player.isHero ? 1 : 0; });
+          this.payWinners(winners, best);
+          this.pushHistory(best);
+          this.completeHand();
+        }
+
+        payWinners(winners, best) {
+          this.collectChipsAnimation(this.players.map((_, idx) => idx));
+          if (!winners.length) return;
+          const share = this.pot / winners.length;
+          winners.forEach(({ player }) => {
+            player.stats.wins += 1;
+            player.stack += share;
+            if (player.isHero) {
+              this.ledger.bankroll = player.stack;
+              this.saveBankroll();
+            }
+          });
+          const names = winners.map(({ player }) => (player.isHero ? 'You' : player.name)).join(', ');
+          const label = best?.label || 'best hand';
+          this.log(`${names} win ${share.toFixed(1)} each with ${label}.`);
+          const heroWinner = winners.some(({ player }) => player.isHero);
+          if (heroWinner) {
+            this.ledger.xp += 10;
+            this.saveXP();
+            this.updateXPUI();
+            if (this.heroInBlind) {
+              this.ledger.mission.progress = Math.min(this.ledger.mission.target, this.ledger.mission.progress + share);
+              this.updateMissionUI();
+            }
+            this.setStatus(`You win with ${label}.`);
+          } else {
+            this.setStatus(`${names} win with ${label}.`);
+          }
+          this.pot = 0;
+          this.updateWalletUI();
+        }
+
+        pushHistory(best) {
+          if (!this.ui.history) return;
+          this.ledger.summary.push({ label: best?.label || 'Showdown', board: this.board.slice() });
+          const entry = document.createElement('p');
+          entry.textContent = `Hand ${this.ledger.summary.length}: ${best?.label || 'Showdown'} on ${this.board.map(card => `${card.rank}${card.suit}`).join(' ')}`;
+          this.ui.history.prepend(entry);
+          while (this.ui.history.childElementCount > 8) {
+            this.ui.history.removeChild(this.ui.history.lastChild);
+          }
+        }
+
+        completeHand() {
+          clearTimeout(this.heroTimer);
+          this.renderActions([]);
+          this.ui.dealBtn && (this.ui.dealBtn.disabled = false);
+          this.dealerIndex = (this.dealerIndex + 1) % this.players.length;
+          this.players.forEach(player => {
+            if (player.stack <= this.config.blinds / 2 && !player.isHero && this.config.mode === 'cash') {
+              player.stack = this.config.startingStack;
+              this.log(`${player.name} auto-rebuys.`);
+            }
+            player.contribution = 0;
+            player.active = player.stack > 0;
+          });
+          this.streetIndex = 0;
+          this.heroInBlind = false;
+          this.updateUI();
+          this.setDealerText();
+        }
+
+        renderSeats() {
+          if (!this.ui.seats) return;
+          this.ui.seats.innerHTML = this.players.map((player, index) => `
+            <div class="seat-card ${player.isHero ? 'hero' : ''} ${player.active ? '' : 'folded'}">
+              <div class="seat-avatar">${player.isHero ? 'YOU' : player.name.slice(0, 2)}</div>
+              <p class="seat-name">${player.isHero ? 'You' : player.name}</p>
+              <p class="seat-stack">${player.stack.toFixed(1)} chips</p>
+              <p class="seat-type">${player.type}</p>
+              <p class="seat-stack">Stats: ${player.stats.wins} wins / ${player.stats.hands} hands</p>
+            </div>
+          `).join('');
+          this.highlightSeat(-1);
+        }
+
+        renderLog(message) {
+          if (!this.ui.log) return;
+          const entry = document.createElement('p');
+          const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+          entry.textContent = `[${time}] ${message}`;
+          this.ui.log.prepend(entry);
+          while (this.ui.log.childElementCount > 9) {
+            this.ui.log.removeChild(this.ui.log.lastChild);
+          }
+        }
+
+        log(message) {
+          this.renderLog(message);
+        }
+
+        clearHistory() {
+          if (this.ui.history) this.ui.history.innerHTML = '';
+          if (this.ui.log) this.ui.log.innerHTML = '';
+        }
+
+        updateUI() {
+          this.renderSeats();
+          this.updateWalletUI();
+          this.updateMissionUI();
+          this.updateXPUI();
+          if (this.ui.pot) this.ui.pot.textContent = `Pot: ${this.pot.toFixed(1)}`;
+        }
+      }
+
+      const tableManager = new TableManager();
+    })();
+  </script>
+</body>
+</html>
